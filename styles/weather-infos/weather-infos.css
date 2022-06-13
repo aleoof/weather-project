@@ -1,0 +1,25 @@
+.weather__infos {
+	height: auto;
+	position: relative;
+	color: #f4f4f4;
+}
+
+.weather__infos::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+	filter: blur(5px);
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+.weather__infos span {
+	position: relative;
+	z-index: 10;
+}
